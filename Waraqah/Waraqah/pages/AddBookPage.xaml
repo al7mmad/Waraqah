@@ -7,9 +7,24 @@
              x:Class="Waraqah.pages.AddBookPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <Entry Placeholder="Enter the name of the book" />
+            <Entry Placeholder="Enter the author" />
+            <Picker Title="Genders"  >
+                    <Picker.Items>
+                    <x:String>Art</x:String>
+                    <x:String>Business</x:String>
+                    <x:String>Children's</x:String>
+                    <x:String>Classics</x:String>
+                    <x:String>Fantasy</x:String>
+                    <x:String>History</x:String>
+                    <x:String>Sports</x:String>
+                </Picker.Items>
+            </Picker>
+            <Editor />
+            <Button Text="Insert" />
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

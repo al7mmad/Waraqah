@@ -11,7 +11,7 @@
 
     <ContentPage Title="Home"> </ContentPage>
     
-    <local1:CategoryPage Title="Category"/>
+    <local1:CategoryPage Title="Category" />
     <local1:AddBookPage Title="Adding "/>
     <local1:SearchPage Title="Search"/>
     <local1:SettingPage Title="Setting"/>
