@@ -132,4 +132,49 @@
       <Name>Waraqah</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icPlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icSearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icSetting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icCategory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icCategory%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icHome%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icPlus%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icSearch%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icSetting%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icCategory%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icHome%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icPlus%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icSearch%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icSetting%403x.png" />
+  </ItemGroup>
 </Project>

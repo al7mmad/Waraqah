@@ -10,13 +10,13 @@
              x:Class="Waraqah.MainPage">
 
 
-    <ContentPage Title="Home"> </ContentPage>
-    
-    <local1:CategoryPage Title="Category" />
-    <local1:AddBookPage Title="Adding "/>
-    <local1:SearchPage Title="Search"/>
-    <local1:SettingPage Title="Setting"/>
+
+    <ContentPage Title="Home"  Icon="icHome.png"/>
+    <local1:CategoryPage Title="Category" Icon="icCategory.png"/>
+    <local1:AddBookPage Title="Adding" Icon="icPlus.png" />
+    <local1:SearchPage Title="Search"  Icon="icSearch.png"/>
+    <local1:SettingPage Title="Setting"  Icon="icSetting.png"/>
     
 
-</xf:BottomBarPage>
+</xf:BottomBarPage> 
 
