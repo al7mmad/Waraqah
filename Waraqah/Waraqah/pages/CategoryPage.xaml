@@ -7,9 +7,10 @@
              x:Class="Waraqah.pages.CategoryPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="catagory search"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+         
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
