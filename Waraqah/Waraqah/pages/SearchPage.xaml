@@ -10,7 +10,8 @@
             <Label Text="search"
                 VerticalOptions="Start" 
                 HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large" />
-            <SearchBar Placeholder="search for a book" />
+            <SearchBar x:Name="txtSearch" Placeholder="search for a book" />
+            <ListView x:Name="listSearch"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
