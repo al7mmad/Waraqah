@@ -6,11 +6,19 @@
              mc:Ignorable="d"
              x:Class="Waraqah.pages.CategoryPage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="10,10,10,10">
             <Label Text="catagory search"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-         
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Title" />
+
+            <Button Text="art"/>
+            <Button Text="Business" />
+            <Button Text="Children" />
+            <Button Text="Classics" />
+            <Button Text="Fantasy" />
+            <Button Text="History" />
+            <Button Text="Sports" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

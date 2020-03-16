@@ -6,10 +6,11 @@
              mc:Ignorable="d"
              x:Class="Waraqah.pages.SearchPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Margin="10,10,10,10">
+            <Label Text="search"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large" />
+            <SearchBar Placeholder="search for a book" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
