@@ -11,6 +11,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Icons\images\catagory_art.jpg" />
+    <None Remove="Icons\images\catagory_business.jpg" />
+    <None Remove="Icons\images\catagory_children.jpg" />
+    <None Remove="Icons\images\catagory_classics.jpg" />
+    <None Remove="Icons\images\catagory_fantasy.jpg" />
+    <None Remove="Icons\images\catagory_fitness.jpg" />
+    <None Remove="Icons\images\catagory_history.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\images\catagory_fantasy.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\images\catagory_art.jpg" />
+    <EmbeddedResource Include="Icons\images\catagory_business.jpg" />
+    <EmbeddedResource Include="Icons\images\catagory_children.jpg" />
+    <EmbeddedResource Include="Icons\images\catagory_classics.jpg" />
+    <EmbeddedResource Include="Icons\images\catagory_fitness.jpg" />
+    <EmbeddedResource Include="Icons\images\catagory_history.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="ThriveGmbH.BottomNavigationBar.XF" Version="1.0.2" />
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />

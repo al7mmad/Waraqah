@@ -3,22 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local1="http://xamarin.com/schemas/2014/forms"
+             xmlns:local="clr-namespace:Waraqah"
              mc:Ignorable="d"
              x:Class="Waraqah.pages.CategoryPage">
     <ContentPage.Content>
-        <StackLayout Margin="10,10,10,10">
+        <ScrollView>
+        <StackLayout Margin="10,10,10,0">
             <Label Text="catagory search"
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Title" />
 
-            <Button Text="art"/>
-            <Button Text="Business" />
-            <Button Text="Children" />
-            <Button Text="Classics" />
-            <Button Text="Fantasy" />
-            <Button Text="History" />
-            <Button Text="Sports" />
-
+                <Button Text="art" ImageSource ="{local:ImageResource Waraqah.Icons.images.catagory_art.jpg}"
+                    BackgroundColor="#AF895A" Padding="0,0,0,0"/>
+                <Button Text="Business" ImageSource="{local:ImageResource Waraqah.Icons.images.catagory_business.jpg}"
+                    BackgroundColor="#AF895A" Padding="0,0,0,0"/>
+                <Button Text="Children" ImageSource="{local:ImageResource Waraqah.Icons.images.catagory_children.jpg}"
+                    BackgroundColor="#AF895A" Padding="0,0,0,0" />
+                <Button Text="Classics" ImageSource="{local:ImageResource Waraqah.Icons.images.catagory_classics.jpg}"
+                    BackgroundColor="#AF895A" Padding="0,0,0,0"/>
+                <Button Text="Fantasy" ImageSource="{local:ImageResource Waraqah.Icons.images.catagory_fantasy.jpg}"
+                    BackgroundColor="#AF895A" Padding="0,0,0,0"/>
+                <Button Text="History" ImageSource="{local:ImageResource Waraqah.Icons.images.catagory_history.jpg}"
+                    BackgroundColor="#AF895A" Padding="0,0,0,0"/>
+                <Button Text="fitness" ImageSource="{local:ImageResource Waraqah.Icons.images.catagory_fitness.jpg}"
+                    BackgroundColor="#AF895A" Padding="0,0,0,0"/>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
