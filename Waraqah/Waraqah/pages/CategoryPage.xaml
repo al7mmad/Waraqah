@@ -9,26 +9,56 @@
              x:Class="Waraqah.pages.CategoryPage">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout Margin="10,10,10,0">
-            <Label Text="catagory search"
+            <StackLayout Margin="10,10,10,0">
+                <Label Text="catagory search"
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Title" />
+                <Editor Text="choose a catagory for searching"/>
 
-                <Button Text="art" ImageSource ="{local:ImageResource Waraqah.Icons.images.catagory_art.jpg}"
-                    BackgroundColor="#AF895A" Padding="0,0,0,0"/>
-                <Button Text="Business" ImageSource="{local:ImageResource Waraqah.Icons.images.catagory_business.jpg}"
-                    BackgroundColor="#AF895A" Padding="0,0,0,0"/>
-                <Button Text="Children" ImageSource="{local:ImageResource Waraqah.Icons.images.catagory_children.jpg}"
-                    BackgroundColor="#AF895A" Padding="0,0,0,0" />
-                <Button Text="Classics" ImageSource="{local:ImageResource Waraqah.Icons.images.catagory_classics.jpg}"
-                    BackgroundColor="#AF895A" Padding="0,0,0,0"/>
-                <Button Text="Fantasy" ImageSource="{local:ImageResource Waraqah.Icons.images.catagory_fantasy.jpg}"
-                    BackgroundColor="#AF895A" Padding="0,0,0,0"/>
-                <Button Text="History" ImageSource="{local:ImageResource Waraqah.Icons.images.catagory_history.jpg}"
-                    BackgroundColor="#AF895A" Padding="0,0,0,0"/>
-                <Button Text="fitness" ImageSource="{local:ImageResource Waraqah.Icons.images.catagory_fitness.jpg}"
-                    BackgroundColor="#AF895A" Padding="0,0,0,0"/>
-        </StackLayout>
+                <Grid RowSpacing="2" ColumnSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Button Text="art" BackgroundColor="#AF895A" Padding="0,0,0,0"  Grid.Column="0" Grid.Row="0" />
+                    <Image Source="{local:ImageResource Waraqah.Icons.images.catagory_art.jpg}" Grid.Column="1" Grid.Row="0" Aspect="Fill" />
+                
+                    <Button Text="Business" BackgroundColor="#AF895A" Padding="0,0,0,0" Grid.Column="0" Grid.Row="1"/>
+                    <Image Source="{local:ImageResource Waraqah.Icons.images.catagory_business.jpg}" Grid.Column="1" Grid.Row="1" Aspect="Fill"/>
+
+
+                    <Button Text="Children" BackgroundColor="#AF895A" Padding="0,0,0,0"  Grid.Column="0" Grid.Row="2" />
+                    <Image Source="{local:ImageResource Waraqah.Icons.images.catagory_children.jpg}" Grid.Column="1" Grid.Row="2" Aspect="Fill"/>
+
+
+                    <Button Text="Classics" BackgroundColor="#AF895A" Padding="0,0,0,0"  Grid.Column="0" Grid.Row="3"/>
+                    <Image Source="{local:ImageResource Waraqah.Icons.images.catagory_classics.jpg}"  Grid.Column="1" Grid.Row="3" Aspect="Fill"/>
+
+                    <Button Text="Fantasy" BackgroundColor="#AF895A" Padding="0,0,0,0" Grid.Column="0" Grid.Row="4"/>
+                    <Image Source="{local:ImageResource Waraqah.Icons.images.catagory_fantasy.jpg}"  Grid.Column="1" Grid.Row="4" Aspect="Fill"/>
+
+                    <Button Text="History" BackgroundColor="#AF895A" Padding="0,0,0,0"  Grid.Column="0" Grid.Row="5"/>
+                    <Image Source="{local:ImageResource Waraqah.Icons.images.catagory_history.jpg}"  Grid.Column="1" Grid.Row="5" Aspect="Fill"/>
+
+                    <Button Text="fitness" BackgroundColor="#AF895A" Padding="0,0,0,0"  Grid.Column="0" Grid.Row="6"/>
+                    <Image Source="{local:ImageResource Waraqah.Icons.images.catagory_fitness.jpg}"  Grid.Column="1" Grid.Row="6" Aspect="Fill"/>
+
+
+
+
+                </Grid>
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
