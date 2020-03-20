@@ -6,11 +6,17 @@
              mc:Ignorable="d"
              x:Class="Waraqah.pages.AddBookPage">
     <ContentPage.Content>
-        <StackLayout>
 
-            <Entry Placeholder="Enter the name of the book" />
+
+        <StackLayout>
+        <StackLayout Margin="60,0,0,0">
+            <Entry Keyboard="Text" Placeholder="Enter the name of the book" />
             <Entry Placeholder="Enter the author" />
-            <Picker Title="Genders"  >
+         </StackLayout>
+            
+          <StackLayout>
+                <Entry Keyboard="Numeric" Placeholder="No. Pages"/>
+                <Picker Title="Genders"  >
                     <Picker.Items>
                     <x:String>Art</x:String>
                     <x:String>Business</x:String>
@@ -21,10 +27,11 @@
                     <x:String>Sports</x:String>
                 </Picker.Items>
             </Picker>
-            <Editor />
-            <Button Text="Insert" />
+                <Editor HeightRequest="100" Keyboard="Chat" Placeholder="Talk About it "/>
+            <Button Margin="120" Text="Insert" />
+        </StackLayout>
 
-
+     
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
