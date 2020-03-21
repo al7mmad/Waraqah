@@ -16,5 +16,12 @@ namespace Waraqah.pages
         {
             InitializeComponent();
         }
+
+         void txtSearch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            resultsStack.Children.Clear();
+        }
+
     }
+
 }
