@@ -18,9 +18,10 @@
                 HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large" />
             <SearchBar x:Name="txtSearch" Placeholder="search for a book" TextChanged="txtSearch_TextChanged" />
             <ListView x:Name="listSearch"/>
-            
-            
-        <ScrollView x:Name="resultsScroll"                     VerticalOptions="FillAndExpand">
+        <labal> Hello
+            <Label/>
+
+            <ScrollView x:Name="resultsScroll"                     VerticalOptions="FillAndExpand">
             <StackLayout x:Name="resultsStack" />
     </ScrollView>
             
