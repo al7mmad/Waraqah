@@ -11,6 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Database1.mdf" />
+    <None Remove="Database1_log.ldf" />
     <None Remove="Icons\images\catagory_art.jpg" />
     <None Remove="Icons\images\catagory_business.jpg" />
     <None Remove="Icons\images\catagory_children.jpg" />
@@ -53,5 +55,9 @@
     <EmbeddedResource Update="pages\SettingPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>

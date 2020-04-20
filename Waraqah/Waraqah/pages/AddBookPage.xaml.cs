@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace Waraqah.pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -15,6 +16,7 @@ namespace Waraqah.pages
         public AddBookPage()
         {
             InitializeComponent();
+
         }
     }
 }
