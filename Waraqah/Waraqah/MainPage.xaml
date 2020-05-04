@@ -9,13 +9,30 @@
             mc:Ignorable="d"
              x:Class="Waraqah.MainPage">
 
-
+    <xf:BottomBarPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ActiveIndicator" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="Red" />
+            </Style>
+            <Style x:Key="InactiveIndicator" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="OutlineColor" Value="Red" />
+            </Style>
+        </ResourceDictionary>
+    </xf:BottomBarPage.Resources>
 
     <ContentPage Title="Home"  Icon="icHome.png"/>
     <local1:CategoryPage Title="Category" Icon="icCategory.png"/>
     <local1:AddBookPage Title="Adding" Icon="icPlus.png" />
     <local1:SearchPage Title="Search"  Icon="icSearch.png"/>
     <local1:SettingPage Title="Setting"  Icon="icSetting.png"/>
+    
+    
+    
+    <!---------------------------------------------------------------------->
+    
+    
+    
     
 
 </xf:BottomBarPage> 

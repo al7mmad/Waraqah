@@ -15,6 +15,8 @@ namespace Waraqah.pages
     {
         public AddBookPage()
         {
+            NavigationPage.SetHasNavigationBar(this, false);
+
             InitializeComponent();
 
         }

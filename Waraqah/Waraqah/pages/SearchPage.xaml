@@ -16,7 +16,7 @@
             <Label Text="search"
                 VerticalOptions="Start" 
                 HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large" />
-            <SearchBar x:Name="txtSearch" Placeholder="search for a book" TextChanged="txtSearch_TextChanged" />
+        <SearchBar x:Name="txtSearch" Placeholder="search for a book" TextChanged="txtSearch_TextChanged"  TextColor="#a74c05" PlaceholderColor="#a74c05" />
             <ListView x:Name="listSearch"/>
         
 
