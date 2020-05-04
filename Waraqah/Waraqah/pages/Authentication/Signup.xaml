@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WaraqahApp.Pages.Authentication.Signup">
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal">
+            <RelativeLayout>
+                <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+                      RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+                    <RelativeLayout Margin="0,20,0,0" x:Name="container">
+                        <Image x:Name="boxView" 
+                               Source="Waraqah_LoginPage.png"
+                               HeightRequest="125"
+                               RelativeLayout.XConstraint=
+                               "{ConstraintExpression 
+                               Type=RelativeToParent,
+                               Property=Width, 
+                               Factor=0.5,
+                               Constant=-50}" />
+                    </RelativeLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="10" />
+                            <RowDefinition Height="150" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="15" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="3" Grid.ColumnSpan="2" Margin="60,0,0,0" FontSize="30" TextColor="#000" Text="Register NOW" />
+                        <BoxView Grid.Row="4" Grid.ColumnSpan="2" Margin="158,0,150,0" WidthRequest="1" HeightRequest="3" Color="#d97615"/>
+
+                        <StackLayout Grid.Row="6" Grid.ColumnSpan="2">
+                            <Frame CornerRadius="50" BackgroundColor="#d97615" HeightRequest="42" Margin="10">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="12*"/>
+                                        <ColumnDefinition Width="120*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="ic_action_person_outline.png" Margin="1,0,5,0" Grid.Row="0" Grid.Column="0"/>
+                                    <Entry Placeholder="Username" Grid.Column="1" Grid.Row="0" TextColor="#fff" PlaceholderColor="#fff" FontSize="20" x:Name="txtUserName2"/>
+                                </Grid>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="7" Grid.ColumnSpan="2">
+                            <Frame CornerRadius="50" BackgroundColor="#d97615" HeightRequest="42" Margin="10">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="12*"/>
+                                        <ColumnDefinition Width="120*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="ic_action_lock_outline.png" Margin="1,0,5,0" Grid.Row="0" Grid.Column="0"/>
+                                    <Entry Placeholder="Password" IsPassword="True" Grid.Column="1" Grid.Row="0" TextColor="#fff" PlaceholderColor="#fff" FontSize="20"  x:Name="txtPassword2"/>
+                                </Grid>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="8" Grid.ColumnSpan="2">
+                            <Frame CornerRadius="50" BackgroundColor="#d97615" HeightRequest="42" Margin="10">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="10*"/>
+                                        <ColumnDefinition Width="120*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="ic_action_email.png" Margin="1,0,5,0" Grid.Row="0" Grid.Column="0"/>
+                                    <Entry Placeholder="Email" Grid.Column="1" Grid.Row="0" TextColor="#fff" PlaceholderColor="#fff" FontSize="20" x:Name="txtEmail2" />
+                                </Grid>
+                            </Frame>
+                        </StackLayout>
+
+                        <Button Grid.Row="9" Grid.Column="0" Text="Register" HorizontalOptions="CenterAndExpand" WidthRequest="200" FontSize="20" BackgroundColor="Transparent" Clicked="btnSignUP_Clicked" x:Name="btnSignUP" />
+                        <Button Grid.Row="9" Grid.Column="1" Text="Go Back" HorizontalOptions="CenterAndExpand" WidthRequest="200" FontSize="20" BackgroundColor="Transparent" Clicked="GB" />
+                        <Label Grid.Row="10" Grid.ColumnSpan="0" Margin="60,0,0,0" FontSize="30" TextColor="#000" Text="" x:Name="lblmsg" />
+                    </Grid>
+                </Grid>
+            </RelativeLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
